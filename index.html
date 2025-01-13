@@ -1,31 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firebase Authentication</title>
-</head>
-<body>
-  <h1>Firebase Authentication</h1>
-
-  <div id="auth-section">
-    <!-- Connexion -->
-    <h2>Se connecter</h2>
-    <form id="login-form">
-      <input type="email" id="login-email" placeholder="Email" required>
-      <input type="password" id="login-password" placeholder="Mot de passe" required>
-      <button type="submit">Se connecter</button>
-    </form>
-  </div>
-
-  <div id="user-section" style="display: none;">
-    <button id="logout-btn">Se déconnecter</button>
-  </div>
-
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
-  
- 
-  <script type="module" src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proto</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
