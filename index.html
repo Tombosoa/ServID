@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Authentication</title>
+</head>
+<body>
+  <h1>Firebase Authentication</h1>
+
+  <div id="auth-section">
+    <!-- Inscription -->
+    <h2>S'inscrire</h2>
+    <form id="signup-form">
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Mot de passe" required>
+      <button type="submit">S'inscrire</button>
+    </form>
+
+    <!-- Connexion -->
+    <h2>Se connecter</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Mot de passe" required>
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+
+  <div id="user-section" style="display: none;">
+    <h2>Bienvenue, <span id="user-email"></span></h2>
+    <button id="logout-btn">Se déconnecter</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+  
+ 
+  <script type="module" src="app.js"></script>
+</body>
+</html>
